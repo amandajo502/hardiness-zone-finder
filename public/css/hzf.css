@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.btn-sm {
+  width: 100%;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  transition: opacity 0.5s;
+  opacity: 1;
+}

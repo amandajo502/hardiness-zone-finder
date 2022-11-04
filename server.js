@@ -7,10 +7,6 @@ const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
-router.get("/", function (req, res, next) {
-  res.send("Tomato");
-});
-
 app.use("/api/", router);
 app.use(express.static(path.join(__dirname, "/public")));
 

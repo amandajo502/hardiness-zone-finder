@@ -1,14 +1,15 @@
-const zipInput = document.getElementById("zipInput");
+const zipInput = document.getElementById("floatingInput");
 const submitButton = document.getElementById("submitButton");
+const resultContainer = document.getElementById("resultContainer");
 const zoneSpans = [
   document.getElementById("zoneSpan1"),
   document.getElementById("zoneSpan2"),
 ];
 let zoneInfo = {};
 
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault();
   validateZip(zipInput.value);
-  console.log(`Value: ${zipInput.value}`);
 });
 
 function validateZip(zip) {
@@ -42,5 +43,12 @@ const getZone = (zipcode) =>
     })
     .catch((err) => console.error(err));
 
-const updateZoneSpans = (zoneInfo) =>
-  zoneSpans.map((span) => (span.textContent = zoneInfo.hardiness_zone));
+const updateZoneSpans = (zoneInfo) => {
+  zoneSpans.map((span) =>
+    zoneInfo?.hardiness_zone
+      ? (span.textContent = zoneInfo.hardiness_zone)
+      : (span.textContent = "unknown")
+  );
+  resultContainer.classList.remove("invisible");
+  resultContainer.classList.add("visible");
+};
