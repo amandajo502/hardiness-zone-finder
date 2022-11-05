@@ -7,6 +7,11 @@ const zoneSpans = [
 ];
 let zoneInfo = {};
 
+zipInput.addEventListener("input", (e) => {
+  resultContainer.classList.remove("visible");
+  resultContainer.classList.add("invisible");
+});
+
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   validateZip(zipInput.value);
