@@ -7,7 +7,7 @@
              "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
             "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
             "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": "Dill, Basil, Peppers..."
+            "plantCompanions": ["Dill", "Basil", "Peppers"]
         },
 
         {
@@ -17,7 +17,7 @@
              "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
             "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
             "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": "Dill, Basil, Peppers..."
+            "plantCompanions": ["Dill", "Basil", "Peppers"]
         },
 
         {
@@ -27,7 +27,7 @@
              "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
             "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
             "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": "Dill, Basil, Peppers..."
+            "plantCompanions": ["Dill", "Basil", "Peppers"]
         },
 
         {
@@ -37,7 +37,7 @@
              "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
             "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
             "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": "Dill, Basil, Peppers..."
+            "plantCompanions": ["Dill", "Basil", "Peppers"]
         }
     ]
 }
