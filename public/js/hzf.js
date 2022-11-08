@@ -21,7 +21,7 @@ function validateZip(zip) {
   const isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zip);
 
   if (!isValidZip) {
-    zipInput.classList.add("is-invalid"), console.log("Invalid");
+    zipInput.classList.add("is-invalid");
   } else {
     zipInput.classList.remove("is-invalid");
     getZone(zip)
@@ -43,7 +43,6 @@ const getZone = (zipcode) =>
   })
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
       zoneInfo = response;
     })
     .catch((err) => console.error(err));
