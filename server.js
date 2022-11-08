@@ -17,5 +17,5 @@ app.listen(PORT, () => {
 });
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "/hardiness-zone-finder/index.html"));
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
