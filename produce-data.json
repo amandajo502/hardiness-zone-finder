@@ -1,231 +1,43 @@
 {
-    "zone1":[
+    "produce": [
         {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
+            "name": "Tomato",
+            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
+             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
+            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
+            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
+            "plantCompanions": "Dill, Basil, Peppers..."
         },
 
         {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
+            "name": "Eggplant",
+            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
+             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
+            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
+            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
+            "plantCompanions": "Dill, Basil, Peppers..."
         },
 
         {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone2":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
+            "name": "Corn",
+            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
+             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
+            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
+            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
+            "plantCompanions": "Dill, Basil, Peppers..."
         },
 
         {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone3":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone4":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone5":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone6":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone7":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone8":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone9":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        }
-    ],
-
-    "zone10":[
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
-        },
-
-        {
-            "name":"Tomato",
-            "startSeedIndoors": "March 13",
-            "transplantPlantOutdoors": "May 20",
-            "companionPlants": "dill, basil, peppers...."
+            "name": "Peppers",
+            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
+             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
+            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
+            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
+            "plantCompanions": "Dill, Basil, Peppers..."
         }
     ]
 }
