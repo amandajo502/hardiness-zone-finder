@@ -5,13 +5,6 @@ body {
   flex-direction: column;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .btn-sm {
   width: 100%;
   margin: 0.5rem 0 0 0;
@@ -19,11 +12,6 @@ input::-webkit-inner-spin-button {
 
 .container-sm {
   max-width: 25rem;
-}
-
-/* Firefox */
-input[type="number"] {
-  appearance: textfield;
 }
 
 .is-invalid {
