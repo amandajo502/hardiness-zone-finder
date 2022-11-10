@@ -16,12 +16,15 @@
   </head>
 
   <body>
-    <div class="container-sm">
+    
+    <div class="container-lg d-flex align-items-stretch">
+      <div class="row">
+        <div class="col text-center" id="landingForm">
       <h3>
         <small class="text-muted">find your</small>
         Hardiness Zone
       </h3>
-      <form class="form-floating mb-3 zipInputContainer">
+      <form class="form-floating mb-3 zipInputContainer" >
         <input
           type="text"
           class="form-control"
@@ -33,74 +36,23 @@
           <strong>Submit</strong>
         </button>
       </form>
-      <div id="resultContainer" class="resultContainer invisible">
+      </div>
+      <div id="resultContainer" class="col align-self-center resultContainer invisible">
+        <div class="row">
+        <img src="./images/banner.jpg" alt="holding seedling" height="100%">
         <label>Your Hardiness Zone is <span id="zoneSpan1"></span>!</label>
+        </div>
         <p>
           Select produce to start planning your garden in zone
           <span id="zoneSpan2"></span>.
         </p>
-      </div>
-      <input type='button' onclick='tableFromJson()' value='See your zone planting schedule' />
+      <div id="scheduleContainer" class="row scheduleContainer invisible">
+      <input type='button' id="scheduleButton" onclick='tableFromJson()' value='See your zone planting schedule' />
     <p id="showData"></p>
-</body>
-
-<script>
-  let tableFromJson = () => {
-    // the json data.
-    const myProduce = [
-      {'Produce ID': '1', 'Produce Name': 'Tomato',
-       'Start Seed Indoor': 'March 15', 'Transplant Outdoors': 'May 20th',
-       'Harvest': 'Until Freezing', 'Companion Plants': 'Basil, Dill, Pepper'
-      },
-      {'Produce ID': '2', 'Produce Name': 'Pepper',
-      'Start Seed Indoor': 'March 15', 'Transplant Outdoors': 'May 20th',
-       'Harvest': 'Until Freezing', 'Companion Plants': 'Basil, Dill, Pepper'
-      },
-      {'Produce ID': '3', 'Produce Name': 'Corn',
-      'Start Seed Indoor': 'March 15', 'Transplant Outdoors': 'May 20th',
-       'Harvest': 'Until Freezing', 'Companion Plants': 'Basil, Dill, Pepper'
-      }
-    ]
-
-    // Extract value from table header. 
-    // ('Produce ID', 'Produce Name', 'Start Seed Indoor' and 'Transplant Outdoors')
-    let col = [];
-    for (let i = 0; i < myProduce.length; i++) {
-      for (let key in myProduce[i]) {
-        if (col.indexOf(key) === -1) {
-          col.push(key);
-        }
-      }
-    }
-
-    // Create table.
-    const table = document.createElement("table");
-
-    // Create table header row using the extracted headers above.
-    let tr = table.insertRow(-1);                   // table row.
-
-    for (let i = 0; i < col.length; i++) {
-      let th = document.createElement("th");      // table header.
-      th.innerHTML = col[i];
-      tr.appendChild(th);
-    }
-
-    // add json data to the table as rows.
-    for (let i = 0; i < myProduce.length; i++) {
-
-      tr = table.insertRow(-1);
-
-      for (let j = 0; j < col.length; j++) {
-        let tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = myProduce[i][col[j]];
-      }
-    }
-
-    // Now, add the newly created table with json data, to a container.
-    const divShowData = document.getElementById('showData');
-    divShowData.innerHTML = "";
-    divShowData.appendChild(table);
-  }
-</script>
+      </div>
+    </div>
+    </div>
+    </div>
     <script type="module" src="js/hzf.js"></script>
+</body>
 </html>

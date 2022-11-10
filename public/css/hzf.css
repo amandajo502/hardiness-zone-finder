@@ -5,6 +5,11 @@ body {
   flex-direction: column;
 }
 
+#landingForm {
+  background-image: url('../images/gardeningLogo.jpg');
+}
+
+
 .btn-sm {
   width: 100%;
   margin: 0.5rem 0 0 0;
