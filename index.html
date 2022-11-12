@@ -46,10 +46,18 @@
           Select produce to start planning your garden in zone
           <span id="zoneSpan2"></span>.
         </p>
-      <div id="scheduleContainer" class="row scheduleContainer invisible">
-      <input type='button' id="scheduleButton" onclick='tableFromJson()' value='See your zone planting schedule' />
-    <p id="showData"></p>
-      </div>
+        <table id="table" data-show-header="true" data-pagination="true">
+        <thead>
+          <tr>
+            <th data-field="produce">Produce</th>
+            <th data-field="startSeedIndoors">Start Seed Indoors</th>
+            <th data-field="transplantOutdoors">Transplant or Start Seed Outdoors</th>
+            <th data-field="companionPlants">Companion Plants</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
     </div>
     </div>
     </div>
