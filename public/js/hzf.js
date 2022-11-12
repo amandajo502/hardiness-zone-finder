@@ -61,30 +61,22 @@ const updateZoneSpans = (zoneInfo) => {
   resultContainer.classList.add("visible");
 };
 
-
-  const data = [
-    {
-      "produce": "Tomato",
-      "startSeedIndoors": "March 15th",
-      "transplantOutdoors": "May 20th",
-      "companionPlants": "Basil Dill Pepper"
-    },
-    {
-      "produce": "Corn",
-      "startSeedIndoors": "March 15th",
-      "transplantOutdoors": "May 20th",
-      "companionPlants": "Basil Dill Pepper"
-    },
-    {
-      "produce": "Pepper",
-      "startSeedIndoors": "March 15th",
-      "transplantOutdoors": "May 20th",
-      "companionPlants": "Basil Dill Pepper"
-    }
-  ];
-
-  $(function(){
-    $('table').bootstrapTable({
-      data: data
-    });
-  });
+fetch("produce-data.json")
+.then(function(response){
+  return response.json();
+})
+.then(function(products){
+  let placeholder = document.querySelector("#data-output");
+  let out = "";
+  for(let product of products){
+    out += `
+      <tr>
+        <td>${product.name}</td>
+        <td>${product.startSeedIndoors}</td>
+        <td>${product.transplantOutdoors}</td>
+        <td>${product.companionPlants}</td>
+      </tr>
+    `; 
+  }
+  placeholder.innerHTML = out;
+})

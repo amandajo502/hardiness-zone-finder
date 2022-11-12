@@ -1,43 +1,20 @@
-{
-    "produce": [
+[
         {
-            "name": "Tomato",
-            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
-             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
-            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
-            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": ["Dill", "Basil", "Peppers"]
+          "name": "Tomato",
+          "startSeedIndoors": "March 15th",
+          "transplantOutdoors": "May 20th",
+          "companionPlants": "Basil Dill Pepper"
         },
-
-      {
-            "name": "Eggplant",
-            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
-             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
-            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
-            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": ["Dill", "Basil", "Peppers"]
-        },
-
         {
-            "name": "Corn",
-            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
-             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
-            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
-            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": ["Dill", "Basil", "Peppers"]
+          "name": "Corn",
+          "startSeedIndoors": "March 15th",
+          "transplantOutdoors": "May 20th",
+          "companionPlants": "Basil Dill Pepper"
         },
-
         {
-            "name": "Peppers",
-            "zones": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-            "startSeedIndoors": ["Feb 15", "March 15", "March 15", "March 15",
-             "March 15", "March 15", "March 15", "March 15", "March 15", "March 15"],
-            "transplantPlantOutdoors": ["May 20", "May 20", "May 20", "May 20", 
-            "May 20", "May 20", "May 20", "May 20", "May 20", "May 20"],
-            "plantCompanions": ["Dill", "Basil", "Peppers"]
+          "name": "Pepper",
+          "startSeedIndoors": "March 15th",
+          "transplantOutdoors": "May 20th",
+          "companionPlants": "Basil Dill Pepper"
         }
-    ]
-}
+]

@@ -38,7 +38,6 @@
       <div id="resultContainer" class="col resultContainer invisible">
         <div class="row">
         <label>Your Hardiness Zone is <span id="zoneSpan1"></span>!</label>
-        
         <p>
           Select produce to start planning your garden in zone
           <span id="zoneSpan2"></span>.
@@ -56,13 +55,14 @@
       data-search="true">
       <thead>
         <tr>
-          <th data-field="produce">Produce</th>
+          <th data-field="name">Produce</th>
           <th data-field="startSeedIndoors">Start Seed Indoors</th>
           <th data-field="transplantOutdoors">Transplant or Start Seed Outdoors</th>
           <th data-field="companionPlants">Companion Plants</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="data-output">
+        <!-- populated from js file -->
       </tbody>
       </table>
     </div> 
