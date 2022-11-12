@@ -3,6 +3,8 @@ const submitButton = document.getElementById("submitButton");
 const resultContainer = document.getElementById("resultContainer");
 const scheduleContainer = document.getElementById("scheduleContainer");
 const scheduleButton = document.getElementById("scheduleButton");
+const table = document.getElementById("table");
+const tableContainer = document.getElementById("tableContainer");
 const zoneSpans = [
   document.getElementById("zoneSpan1"),
   document.getElementById("zoneSpan2"),
@@ -62,27 +64,27 @@ const updateZoneSpans = (zoneInfo) => {
 
   const data = [
     {
-      produce: "Tomato",
-      startSeedIndoors: "March 15th",
-      transplantOutdoors: "May 20th",
-      companionPlants: "Basil Dill Pepper"
+      "produce": "Tomato",
+      "startSeedIndoors": "March 15th",
+      "transplantOutdoors": "May 20th",
+      "companionPlants": "Basil Dill Pepper"
     },
     {
-      produce: "Corn",
-      startSeedIndoors: "March 15th",
-      transplantOutdoors: "May 20th",
-      companionPlants: "Basil Dill Pepper"
+      "produce": "Corn",
+      "startSeedIndoors": "March 15th",
+      "transplantOutdoors": "May 20th",
+      "companionPlants": "Basil Dill Pepper"
     },
     {
-      produce: "Pepper",
-      startSeedIndoors: "March 15th",
-      transplantOutdoors: "May 20th",
-      companionPlants: "Basil Dill Pepper"
+      "produce": "Pepper",
+      "startSeedIndoors": "March 15th",
+      "transplantOutdoors": "May 20th",
+      "companionPlants": "Basil Dill Pepper"
     }
   ];
 
   $(function(){
-    $('#table').bootstrapTable({
+    $('table').bootstrapTable({
       data: data
     });
   });
