@@ -1,20 +1,21 @@
 [
-        {
-          "name": "Tomato",
-          "startSeedIndoors": "March 15th",
-          "transplantOutdoors": "May 20th",
-          "companionPlants": "Basil Dill Pepper"
-        },
-        {
-          "name": "Corn",
-          "startSeedIndoors": "March 15th",
-          "transplantOutdoors": "May 20th",
-          "companionPlants": "Basil Dill Pepper"
-        },
-        {
-          "name": "Pepper",
-          "startSeedIndoors": "March 15th",
-          "transplantOutdoors": "May 20th",
-          "companionPlants": "Basil Dill Pepper"
-        }
+  {
+    "name": "Corn",
+    "startSeedsIndoorsWeeks": 6,
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "May 20"
+      },
+      {
+        "zone": "2",
+        "date": "May 20"
+      },
+      {
+        "zone": "3",
+        "date": "May 20"
+      }
+    ],
+    "companionPlants": "Basil Dill Pepper"
+  }
 ]

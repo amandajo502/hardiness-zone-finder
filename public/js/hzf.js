@@ -9,7 +9,7 @@ const zoneSpans = [
   document.getElementById("zoneSpan1"),
   document.getElementById("zoneSpan2"),
 ];
-let zoneInfo = {};
+let zoneInfo = { hardiness_zone: "3g" };
 
 zipInput.addEventListener("input", (e) => {
   resultContainer.classList.remove("visible");
@@ -61,22 +61,30 @@ const updateZoneSpans = (zoneInfo) => {
   resultContainer.classList.add("visible");
 };
 
+const getOutdoorPlantTime = (prods) => {
+  const result = prods.zoneTransplantOutdoors.filter(
+    (item) => item.zone === zoneInfo.hardiness_zone.charAt(0)
+  );
+  return result[0].date
+};
+
 fetch("produce-data.json")
-.then(function(response){
-  return response.json();
-})
-.then(function(products){
-  let placeholder = document.querySelector("#data-output");
-  let out = "";
-  for(let product of products){
-    out += `
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (products) {
+    let placeholder = document.querySelector("#data-output");
+    let out = "";
+    for (let product of products) {
+      out += `
       <tr>
         <td>${product.name}</td>
-        <td>${product.startSeedIndoors}</td>
-        <td>${product.transplantOutdoors}</td>
+        <td>${product.startSeedsIndoorsWeeks}</td>
+        
+        <td>${getOutdoorPlantTime(product)}</td>
         <td>${product.companionPlants}</td>
       </tr>
-    `; 
-  }
-  placeholder.innerHTML = out;
-})
+    `;
+    }
+    placeholder.innerHTML = out;
+  });
