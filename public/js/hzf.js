@@ -21,7 +21,7 @@ submitButton.addEventListener("click", (e) => {
 
 const getOutdoorPlantTime = (prods) => {
   const result = prods.zoneTransplantOutdoors.filter(
-    (item) => item.zone === zoneInfo?.hardiness_zone?.charAt(0)
+    (item) => item.zone === zoneInfo?.hardiness_zone?.replace(/\D/g, "")
   );
   return result[0]?.date;
 };
