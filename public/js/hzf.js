@@ -7,7 +7,7 @@ const zoneSpans = [
   document.getElementById("zoneSpan2"),
 ];
 
-let zoneInfo = { hardiness_zone: "7a"};
+let zoneInfo = {};
 
 zipInput.addEventListener("input", (e) => {
   resultContainer.classList.remove("visible");
