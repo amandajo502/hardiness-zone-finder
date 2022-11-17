@@ -1,10 +1,12 @@
 const zipInput = document.getElementById("floatingInput");
 const submitButton = document.getElementById("submitButton");
 const resultContainer = document.getElementById("resultContainer");
+
 const zoneSpans = [
   document.getElementById("zoneSpan1"),
   document.getElementById("zoneSpan2"),
 ];
+
 let zoneInfo = {};
 
 zipInput.addEventListener("input", (e) => {
@@ -17,7 +19,14 @@ submitButton.addEventListener("click", (e) => {
   validateZip(zipInput.value);
 });
 
-function validateZip(zip) {
+const getOutdoorPlantTime = (prods) => {
+  const result = prods.zoneTransplantOutdoors.filter(
+    (item) => item.zone === zoneInfo?.hardiness_zone?.replace(/\D/g, "")
+  );
+  return result[0]?.date;
+};
+
+const validateZip = (zip) => {
   const isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zip);
 
   if (!isValidZip) {
@@ -32,7 +41,7 @@ function validateZip(zip) {
         console.log(err);
       });
   }
-}
+};
 
 const getZone = (zipcode) =>
   fetch(`https://plant-hardiness-zone.p.rapidapi.com/zipcodes/${zipcode}`, {
@@ -44,6 +53,26 @@ const getZone = (zipcode) =>
     .then((response) => response.json())
     .then((response) => {
       zoneInfo = response;
+      fetch("produce-data.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (products) {
+          let placeholder = document.querySelector("#data-output");
+          let out = "";
+          for (let product of products) {
+            out += `
+      <tr>
+        <td>${product.name}</td>
+        <td>${product.startSeedsIndoorsWeeks}</td>
+        <td>${getOutdoorPlantTime(product)}</td>
+        <td>${product.daysToHarvest}</td>
+        <td>${product.companionPlants}</td>
+      </tr>
+    `;
+          }
+          placeholder.innerHTML = out;
+        });
     })
     .catch((err) => console.error(err));
 
