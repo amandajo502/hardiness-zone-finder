@@ -17,13 +17,13 @@
 
   <body style="background: linear-gradient(135deg, #66ff99 10%, #3399ff 100%)">
     
-    <div class="container-sm">
+    <div class="container-md">
       <div class="row">
       <h3 class="text-white text-center p-3">
         <small class="text-muted">find your</small>
         Hardiness Zone
       </h3>
-      <form class="form-floating mb-3 zipInputContainer" >
+      <form class="container-sm form-floating mb-3 zipInputContainer" >
         <input
           type="text"
           class="form-control"
@@ -39,33 +39,36 @@
         <div class="row">
         <label>Your Hardiness Zone is <span id="zoneSpan1"></span>!</label>
         <p>
-          Select produce to start planning your garden in zone
+          This is your gardening schedule in zone
           <span id="zoneSpan2"></span>.
         </p>
+
+        <div id="tableContainer" class="row container mt-2 mb-2">
+          <table id="table" class="table table-bordered bg-white"
+          data-show-header="true" 
+          data-pagination="true" 
+          data-search="true">
+          <thead>
+            <tr>
+              <th data-field="name">Produce</th>
+              <th data-field="startSeedIndoors">Start Seed Indoors This Long Before Transplating Outdoors</th>
+              <th data-field="zoneTransplantOutdoors">Transplant or Start Seed Outdoors</th>
+              <th data-field="daysToHarvest">Days to Maturity/Harvests</th>
+              <th data-field="companionPlants">Companion Plants</th>
+            </tr>
+          </thead>
+          <tbody id="data-output">
+            <!-- populated from js file -->
+          </tbody>
+          </table>
+        </div> 
+
       </div>
     </div>
     </div>
     
     </div>
 
-    <div id="tableContainer" class="row container mt-2 mb-2">
-      <table id="table" class="table table-bordered bg-white"
-      data-show-header="true" 
-      data-pagination="true" 
-      data-search="true">
-      <thead>
-        <tr>
-          <th data-field="name">Produce</th>
-          <th data-field="startSeedIndoors">Start Seed Indoors</th>
-          <th data-field="zoneTransplantOutdoors">Transplant or Start Seed Outdoors</th>
-          <th data-field="companionPlants">Companion Plants</th>
-        </tr>
-      </thead>
-      <tbody id="data-output">
-        <!-- populated from js file -->
-      </tbody>
-      </table>
-    </div> 
 
     <script type="module" src="js/hzf.js"></script>
 </body>

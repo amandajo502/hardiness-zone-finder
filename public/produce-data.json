@@ -1,21 +1,492 @@
 [
   {
     "name": "Corn",
-    "startSeedsIndoorsWeeks": 6,
+    "startSeedsIndoorsWeeks": "",
     "zoneTransplantOutdoors": [
       {
         "zone": "1",
-        "date": "May 20"
+        "date": "April-May"
       },
       {
         "zone": "2",
-        "date": "May 20"
+        "date": "April-June"
       },
       {
         "zone": "3",
-        "date": "May 20"
+        "date": ""
+      },
+      {
+        "zone": "4",
+        "date":""
+      },
+      {
+        "zone": "5",
+        "date": "May-July"
+      },
+      {
+        "zone": "6",
+        "date": "May-July"
+      },
+      {
+        "zone": "7",
+        "date": "May-July"
+      },
+      {
+        "zone": "8",
+        "date": "May-July"
+      },
+      {
+        "zone": "9",
+        "date": "March-April and August"
+      },
+      {
+        "zone": "10",
+        "date": "February-March and August-September"
       }
     ],
-    "companionPlants": "Basil Dill Pepper"
+    "daysToHarvest": "80-100",
+    "companionPlants": "Basil, Dill, Nasturtiums, Pole Beans"
+  },
+
+  {
+    "name": "Peppers",
+    "startSeedsIndoorsWeeks": "10 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "May"
+      },
+      {
+        "zone": "2",
+        "date": "May-June"
+      },
+      {
+        "zone": "3",
+        "date": "Early June"
+      },
+      {
+        "zone": "4",
+        "date":"Early June"
+      },
+      {
+        "zone": "5",
+        "date": "Late May"
+      },
+      {
+        "zone": "6",
+        "date": "Late May"
+      },
+      {
+        "zone": "7",
+        "date": "April-May"
+      },
+      {
+        "zone": "8",
+        "date": "April-May"
+      },
+      {
+        "zone": "9",
+        "date": "February-April or July-August"
+      },
+      {
+        "zone": "10",
+        "date": "January-March or August-September"
+      }
+    ],
+    "daysToHarvest": "65-80",
+    "companionPlants": "Basil, Beets, Garlic, Eggplant, Brussel Sprouts"
+  },
+
+  {
+    "name": "Tomatoes",
+    "startSeedsIndoorsWeeks": "8 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "May-June"
+      },
+      {
+        "zone": "2",
+        "date": "May"
+      },
+      {
+        "zone": "3",
+        "date": "Late May"
+      },
+      {
+        "zone": "4",
+        "date":"Late May"
+      },
+      {
+        "zone": "5",
+        "date": "Late May"
+      },
+      {
+        "zone": "6",
+        "date": "Late May"
+      },
+      {
+        "zone": "7",
+        "date": "April-May"
+      },
+      {
+        "zone": "8",
+        "date": "June-Early August"
+      },
+      {
+        "zone": "9",
+        "date": "February-April"
+      },
+      {
+        "zone": "10",
+        "date": "January-March"
+      }
+    ],
+    "daysToHarvest": "70-85",
+    "companionPlants": "Basil, Garlic, Parsley, Marigold, Nasturtium, Asparagus"
+  },
+
+  {
+    "name": "Beets",
+    "startSeedsIndoorsWeeks": "",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "March-June"
+      },
+      {
+        "zone": "2",
+        "date": "March-June"
+      },
+      {
+        "zone": "3",
+        "date": "Late April-July"
+      },
+      {
+        "zone": "4",
+        "date":"Late April-July"
+      },
+      {
+        "zone": "5",
+        "date": "Early April"
+      },
+      {
+        "zone": "6",
+        "date": "Early April"
+      },
+      {
+        "zone": "7",
+        "date": "Feruary-March or August-September"
+      },
+      {
+        "zone": "8",
+        "date": "February-March and August-September"
+      },
+      {
+        "zone": "9",
+        "date": "September-March"
+      },
+      {
+        "zone": "10",
+        "date": "October-March"
+      }
+    ],
+    "daysToHarvest": "55-65",
+    "companionPlants": "Onions, Lettuce, Cabbage, Radishes"
+  },
+
+  {
+    "name": "Broccoli",
+    "startSeedsIndoorsWeeks": "6 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "May-June"
+      },
+      {
+        "zone": "2",
+        "date": "March-June"
+      },
+      {
+        "zone": "3",
+        "date": "Late April-May"
+      },
+      {
+        "zone": "4",
+        "date":"Late April-May"
+      },
+      {
+        "zone": "5",
+        "date": "Late March-Early April or Late September"
+      },
+      {
+        "zone": "6",
+        "date": "Late March-Early April or Late September"
+      },
+      {
+        "zone": "7",
+        "date": "February-March and August"
+      },
+      {
+        "zone": "8",
+        "date": "February-March and August"
+      },
+      {
+        "zone": "9",
+        "date": "August-February"
+      },
+      {
+        "zone": "10",
+        "date": "August-January"
+      }
+    ],
+    "daysToHarvest": "60-80",
+    "companionPlants": "Celery, Lettuce, Potatoes, Rosemary, Shallots"
+  },
+
+  {
+    "name": "Carrots",
+    "startSeedsIndoorsWeeks": "",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "January-June"
+      },
+      {
+        "zone": "2",
+        "date": "March-Early July"
+      },
+      {
+        "zone": "3",
+        "date": "April-June"
+      },
+      {
+        "zone": "4",
+        "date":"April-June"
+      },
+      {
+        "zone": "5",
+        "date": "Late March-Early April and Late September"
+      },
+      {
+        "zone": "6",
+        "date": "Late March-Early April and Late September"
+      },
+      {
+        "zone": "7",
+        "date": "Late January-March and Late August-Early September"
+      },
+      {
+        "zone": "8",
+        "date": "Late January-March and Late August-Early September"
+      },
+      {
+        "zone": "9",
+        "date": "September-March"
+      },
+      {
+        "zone": "10",
+        "date": "October-March"
+      }
+    ],
+    "daysToHarvest": "70-80",
+    "companionPlants": "Chives, Leeks, Lettuce, Onions, Peppers"
+  },
+
+  {
+    "name": "Sweet Potatoes",
+    "startSeedsIndoorsWeeks": "6 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "Not Suitable"
+      },
+      {
+        "zone": "2",
+        "date": "Not Suitable"
+      },
+      {
+        "zone": "3",
+        "date": "Early June"
+      },
+      {
+        "zone": "4",
+        "date":"Early June"
+      },
+      {
+        "zone": "5",
+        "date": "Late May-Early June"
+      },
+      {
+        "zone": "6",
+        "date": "Late May-Early June"
+      },
+      {
+        "zone": "7",
+        "date": "Late April-Early June"
+      },
+      {
+        "zone": "8",
+        "date": "Late April-Early June"
+      },
+      {
+        "zone": "9",
+        "date": "March-June"
+      },
+      {
+        "zone": "10",
+        "date": "February-June"
+      }
+    ],
+    "daysToHarvest": "90-150",
+    "companionPlants": "Beans, Marigold, Nasturtium, Spinach"
+  },
+
+  {
+    "name": "Eggplants",
+    "startSeedsIndoorsWeeks": "9 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "Not Suitable"
+      },
+      {
+        "zone": "2",
+        "date": "May"
+      },
+      {
+        "zone": "3",
+        "date": "Early June"
+      },
+      {
+        "zone": "4",
+        "date":"Early June"
+      },
+      {
+        "zone": "5",
+        "date": "Late May"
+      },
+      {
+        "zone": "6",
+        "date": "Late May"
+      },
+      {
+        "zone": "7",
+        "date": "April-Early May"
+      },
+      {
+        "zone": "8",
+        "date": "April-Early May"
+      },
+      {
+        "zone": "9",
+        "date": "February-July"
+      },
+      {
+        "zone": "10",
+        "date": "January-March and August-September"
+      }
+    ],
+    "daysToHarvest": "70-90",
+    "companionPlants": "Tomatoes, Peppers, Potatoes"
+  },
+
+  {
+    "name": "Lettuce",
+    "startSeedsIndoorsWeeks": "5 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "February-August"
+      },
+      {
+        "zone": "2",
+        "date": "April-August"
+      },
+      {
+        "zone": "3",
+        "date": "Late April"
+      },
+      {
+        "zone": "4",
+        "date":"Late April"
+      },
+      {
+        "zone": "5",
+        "date": "April-Early June and Early September"
+      },
+      {
+        "zone": "6",
+        "date": "April-Early June and Early September"
+      },
+      {
+        "zone": "7",
+        "date": "Late January-February and September"
+      },
+      {
+        "zone": "8",
+        "date": "Late January-April and September"
+      },
+      {
+        "zone": "9",
+        "date": "February-March"
+      },
+      {
+        "zone": "10",
+        "date": "September-March"
+      }
+    ],
+    "daysToHarvest": "45-65",
+    "companionPlants": "Asparagus, Beets, Carrots, Chives, Eggplants"
+  },
+
+  {
+    "name": "Onions",
+    "startSeedsIndoorsWeeks": "10 weeks",
+    "zoneTransplantOutdoors": [
+      {
+        "zone": "1",
+        "date": "January-May"
+      },
+      {
+        "zone": "2",
+        "date": "March-May"
+      },
+      {
+        "zone": "3",
+        "date": "April"
+      },
+      {
+        "zone": "4",
+        "date":"April"
+      },
+      {
+        "zone": "5",
+        "date": "Late March-Early April and September-December"
+      },
+      {
+        "zone": "6",
+        "date": "Late March-Early April and September-December"
+      },
+      {
+        "zone": "7",
+        "date": "January-Early March and September-December"
+      },
+      {
+        "zone": "8",
+        "date": "January-Early March and September-December"
+      },
+      {
+        "zone": "9",
+        "date": "September-December"
+      },
+      {
+        "zone": "10",
+        "date": "September-December"
+      }
+    ],
+    "daysToHarvest": "100-120",
+    "companionPlants": "Carrots, Beets, Lettuce, Strawberries, Leeks"
   }
+  
 ]

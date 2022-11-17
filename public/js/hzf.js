@@ -1,15 +1,13 @@
 const zipInput = document.getElementById("floatingInput");
 const submitButton = document.getElementById("submitButton");
 const resultContainer = document.getElementById("resultContainer");
-const scheduleContainer = document.getElementById("scheduleContainer");
-const scheduleButton = document.getElementById("scheduleButton");
-const table = document.getElementById("table");
-const tableContainer = document.getElementById("tableContainer");
+
 const zoneSpans = [
   document.getElementById("zoneSpan1"),
   document.getElementById("zoneSpan2"),
 ];
-let zoneInfo = { hardiness_zone: "3g" };
+
+let zoneInfo = { hardiness_zone: "7a"};
 
 zipInput.addEventListener("input", (e) => {
   resultContainer.classList.remove("visible");
@@ -65,7 +63,7 @@ const getOutdoorPlantTime = (prods) => {
   const result = prods.zoneTransplantOutdoors.filter(
     (item) => item.zone === zoneInfo.hardiness_zone.charAt(0)
   );
-  return result[0].date
+  return result[0].date;
 };
 
 fetch("produce-data.json")
@@ -82,6 +80,7 @@ fetch("produce-data.json")
         <td>${product.startSeedsIndoorsWeeks}</td>
         
         <td>${getOutdoorPlantTime(product)}</td>
+        <td>${product.daysToHarvest}</td>
         <td>${product.companionPlants}</td>
       </tr>
     `;
